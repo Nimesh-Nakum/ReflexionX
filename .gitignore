@@ -1,0 +1,42 @@
+__pycache__/
+*.pyc
+
+# Environment
+.env
+.venv/
+
+# Scan outputs
+scan_state.json
+scan_log.jsonl
+out/
+xss_*/
+
+# Binaries (install via go install or setup.sh)
+httpx.exe
+
+# Logs
+*.log
+
+# Temporary files
+tmp/
+.state/
+*.tmp
+
+# Runtime caches
+.ai_payload_cache/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Node (not part of this project)
+node_modules/
+
+# Test artifacts
+test_poc/
+test_poc.py
+test_kill.sh

