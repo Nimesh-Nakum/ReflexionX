@@ -1,0 +1,7 @@
+"}</script><script>window._xss_confirmed='CANARY'</script>
+"}<img src=x onerror=window._xss_confirmed='CANARY'>
+","__proto__":{"xss":"CANARY"}
+"}]}</script><script>window._xss_confirmed='CANARY'</script>
+\\"}]}</script><svg onload=window._xss_confirmed='CANARY'>
+</script><script>window._xss_confirmed='CANARY'</script>
+","xss":"</script><img src=x onerror=window._xss_confirmed='CANARY'>

